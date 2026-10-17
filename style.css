@@ -1,9 +1,11 @@
 
-body { 
-    background-color: #f5f5f5;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    color: #515076;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #515076;
+  background-image: url('images/flowers.png');
+  background-repeat: no-repeat;
+  background-position: 41% 5%;
 }
 
 .title {
@@ -17,59 +19,54 @@ body {
 }
 
 .product-cards {
-    list-style: none;
-    gap: 45px 45px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto 116px;
-    max-width: 1110px;
-    background-color: #f5f5f5;
+  gap: 45px 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 116px;
+  max-width: 1110px;
 }
 
 .product-card {
-    width: 340px;
-    box-sizing: border-box;
-    padding: 25px;
-    border-radius: 1px;
+  width: 340px;
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 1px;
 }
 
-.skin-type {
-  
+.product-card__skin-type {
   color: #515076;
   font-size: 12px;
   line-height: 24px;
   margin: 0 0 5px;
 }
 
-.product-name {
+.product-card__name {
   color: #515076;
   font-size: 20px;
   line-height: 27px;
   margin-bottom: 5px;
 }
 
-
-
-.description {
+.product-card__description {
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 25px;
   color: #515076;
 }
 
-.compound {
+.product-card__compound-title {
   font-weight: bold;
   margin-top: 10px;
   color: #515076;
 }
 
-.compound-list {
+.product-card__compound-list {
   padding-left: 40px;
   color: #515076;
 }
 
-.price-block {
+.price {
   font-weight: bold;
   color: #515076;
   display: flex;
@@ -78,13 +75,13 @@ body {
   margin-top: 25px;
 }
 
-.price {
+.price__label {
   font-weight: 700;
   font-size: 20px;
   color: #515076;
 }
 
-.price-value {
+.price__value {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
