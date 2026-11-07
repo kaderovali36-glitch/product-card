@@ -88,3 +88,18 @@ body {
   letter-spacing: 0;
   color: #515076;
 }
+
+.multicolor-button {
+  background-color: darkred;
+}
+
+.multicolor-button--blue{
+  background-color:blue;
+}
+
+.bottons {
+  display:flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
