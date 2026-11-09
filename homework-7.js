@@ -1,17 +1,21 @@
-function findTemp(city, temp) {
+function showWeather(city, temp) {
   console.log(`Сейчас в городе ${city} - ${temp} градусов по Цельсию`)
 }
-findTemp('Каир', '18')
+showWeather('Каир', '18')
 
-let speed = 30000;
+const LIGHT_SPEED = 300000;
 
-if (speed > 300000) {
-  console.log('Сверхсветовая скорость')
-} else if (speed === 300000) {
-  console.log('Скорость света')
-} else {
-  console.log('Субсветовая скорость')
+function checkSpeed(speed) {
+  if (speed > LIGHT_SPEED) {
+    console.log('Сверхсветовая скорость');
+  } else if (speed === LIGHT_SPEED) {
+    console.log('Скорость света');
+  } else {
+    console.log('Субсветовая скорость');
+  }
 }
+
+checkSpeed(30000);
 
 const product1 = 'Увлжняющий мусс';
 const price1 = 2750;
@@ -51,3 +55,16 @@ function buyProduct3(budget3) {
     console.log(`Вам не хватает ${price3 - budget3}$, пополните баланс`);
   }
 }
+
+function greetUser(name) {
+  console.log(`Привет, ${name}`)
+}
+greetUser('Али')
+
+const date = '9.11.26';
+let day = 'Понедельник';
+var time = '10:52';
+
+console.log(date);
+console.log(day);
+console.log(time);
